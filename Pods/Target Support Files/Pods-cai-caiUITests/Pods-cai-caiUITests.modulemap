@@ -1,0 +1,6 @@
+framework module Pods_cai_caiUITests {
+  umbrella header "Pods-cai-caiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

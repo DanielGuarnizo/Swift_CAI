@@ -7,13 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A8BA5454E227871D919F55C /* Pods_cai_caiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFC2DC8CBC53D0B07E5153E /* Pods_cai_caiUITests.framework */; };
+		7113281A7269B40D9C27CBB9 /* Pods_cai.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FE4C18402B2B6CB9E80487 /* Pods_cai.framework */; };
+		B4D1D3C3378A796B4456D8EC /* Pods_caiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D51456228A9DA2DE2BF8129C /* Pods_caiTests.framework */; };
+		DB48B9E32BD1030100A03C11 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB48B9E22BD1030100A03C11 /* Launch Screen.storyboard */; };
+		DB6F68AC2C0B231800DC0387 /* StartWorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F68AB2C0B231800DC0387 /* StartWorkoutViewModel.swift */; };
+		DB6F68AE2C0B234200DC0387 /* StartWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F68AD2C0B234200DC0387 /* StartWorkoutView.swift */; };
+		DB6F68B02C0B511C00DC0387 /* TemplateWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F68AF2C0B511C00DC0387 /* TemplateWorkoutView.swift */; };
+		DB6F68B22C0B51D800DC0387 /* TemplateExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6F68B12C0B51D800DC0387 /* TemplateExerciseView.swift */; };
+		DB83B5B72C0DEF9D0064BCEC /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B5B62C0DEF9D0064BCEC /* Extensions.swift */; };
+		DB83B5B92C0DF7FE0064BCEC /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B5B82C0DF7FE0064BCEC /* RegisterView.swift */; };
+		DB83B5BB2C0DF8360064BCEC /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B5BA2C0DF8360064BCEC /* RegisterViewModel.swift */; };
+		DB83B5C02C0E0C9F0064BCEC /* SlidingTabView in Frameworks */ = {isa = PBXBuildFile; productRef = DB83B5BF2C0E0C9F0064BCEC /* SlidingTabView */; };
+		DB83B5C22C0E19280064BCEC /* HistoryExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B5C12C0E19280064BCEC /* HistoryExerciseView.swift */; };
+		DB83B5C42C0E19AF0064BCEC /* ExerciseAboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B5C32C0E19AF0064BCEC /* ExerciseAboutView.swift */; };
+		DB83B5C62C0E19E70064BCEC /* ExerciseRecordsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B5C52C0E19E70064BCEC /* ExerciseRecordsView.swift */; };
+		DB83B5C82C0E1CF40064BCEC /* HistoryExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B5C72C0E1CF40064BCEC /* HistoryExerciseViewModel.swift */; };
+		DB83B5CA2C0E1E720064BCEC /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B5C92C0E1E720064BCEC /* Exercise.swift */; };
+		DB83B5CC2C0E1F5C0064BCEC /* Set_E.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB83B5CB2C0E1F5B0064BCEC /* Set_E.swift */; };
+		DB922BDD2C08B52600DF7699 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB922BDC2C08B52500DF7699 /* HomeView.swift */; };
+		DB922BDF2C08B65100DF7699 /* HistoryWorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB922BDE2C08B65100DF7699 /* HistoryWorkoutsView.swift */; };
+		DB922BE12C08B66700DF7699 /* ListTemplateExercisesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB922BE02C08B66700DF7699 /* ListTemplateExercisesView.swift */; };
+		DB922BE72C09D32C00DF7699 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB922BE62C09D32C00DF7699 /* HomeViewModel.swift */; };
+		DB922BEB2C09D5C000DF7699 /* TemplateWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB922BEA2C09D5C000DF7699 /* TemplateWorkout.swift */; };
+		DB922BED2C09D5D500DF7699 /* TemplateExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB922BEC2C09D5D500DF7699 /* TemplateExercise.swift */; };
+		DBB33C912C2058540092B302 /* WhileModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB33C902C2058540092B302 /* WhileModels.swift */; };
+		DBD250242C120FE0008BBE50 /* WorkoutDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD250232C120FE0008BBE50 /* WorkoutDetailViewModel.swift */; };
+		DBD250262C1302DE008BBE50 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD250252C1302DE008BBE50 /* CustomCorner.swift */; };
+		DBD250282C1305DD008BBE50 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD250272C1305DD008BBE50 /* BlurView.swift */; };
+		DBD2502A2C1442A1008BBE50 /* WorkoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD250292C1442A1008BBE50 /* WorkoutDetailView.swift */; };
+		DBD2502C2C145FE1008BBE50 /* CreateModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD2502B2C145FE1008BBE50 /* CreateModels.swift */; };
+		DBEBC1902C1057D400564D1A /* ExerciseSetsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEBC18F2C1057D400564D1A /* ExerciseSetsView.swift */; };
+		DBEBC1992C10B1D800564D1A /* HistoryWorkoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEBC1982C10B1D800564D1A /* HistoryWorkoutsViewModel.swift */; };
+		DBEBC19B2C10B21500564D1A /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEBC19A2C10B21500564D1A /* Workout.swift */; };
+		DBEBC19D2C10B56100564D1A /* HistoryWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBEBC19C2C10B56100564D1A /* HistoryWorkoutView.swift */; };
 		DBF8C8FC2BC81A49005AE697 /* caiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C8FB2BC81A49005AE697 /* caiApp.swift */; };
-		DBF8C8FE2BC81A49005AE697 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C8FD2BC81A49005AE697 /* ContentView.swift */; };
+		DBF8C8FE2BC81A49005AE697 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C8FD2BC81A49005AE697 /* MainView.swift */; };
 		DBF8C9002BC81A4A005AE697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF8C8FF2BC81A4A005AE697 /* Assets.xcassets */; };
 		DBF8C9032BC81A4B005AE697 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF8C9022BC81A4B005AE697 /* Preview Assets.xcassets */; };
 		DBF8C90D2BC81A4B005AE697 /* caiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C90C2BC81A4B005AE697 /* caiTests.swift */; };
 		DBF8C9172BC81A4B005AE697 /* caiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9162BC81A4B005AE697 /* caiUITests.swift */; };
 		DBF8C9192BC81A4B005AE697 /* caiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9182BC81A4B005AE697 /* caiUITestsLaunchTests.swift */; };
+		DBF8C9262BC81A9B005AE697 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DBF8C9252BC81A9B005AE697 /* GoogleService-Info.plist */; };
+		DBF8C9292BC83AF5005AE697 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DBF8C9282BC83AF5005AE697 /* FirebaseAuth */; };
+		DBF8C92B2BC83AF5005AE697 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DBF8C92A2BC83AF5005AE697 /* FirebaseFirestore */; };
+		DBF8C92D2BC83AF5005AE697 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DBF8C92C2BC83AF5005AE697 /* FirebaseFirestoreSwift */; };
+		DBF8C9332BC918CE005AE697 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9322BC918CE005AE697 /* ProfileView.swift */; };
+		DBF8C9392BC91950005AE697 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9382BC91950005AE697 /* LoginView.swift */; };
+		DBF8C9412BC91CF1005AE697 /* ToDoListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9402BC91CF1005AE697 /* ToDoListItem.swift */; };
+		DBF8C9432BC91D00005AE697 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9422BC91D00005AE697 /* User.swift */; };
+		DBF8C9452BC91D50005AE697 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9442BC91D50005AE697 /* MainViewViewModel.swift */; };
+		DBF8C9472BC91D5F005AE697 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9462BC91D5F005AE697 /* ProfileViewViewModel.swift */; };
+		DBF8C9492BC91D76005AE697 /* ToDoListViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9482BC91D76005AE697 /* ToDoListViewViewModel.swift */; };
+		DBF8C94D2BC91D94005AE697 /* LoginViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C94C2BC91D94005AE697 /* LoginViewViewModel.swift */; };
+		DBF8C9532BC931E1005AE697 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9522BC931E1005AE697 /* HeaderView.swift */; };
+		DBF8C9562BC95654005AE697 /* TLButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF8C9552BC95654005AE697 /* TLButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +82,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		54FE4C18402B2B6CB9E80487 /* Pods_cai.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cai.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E87B2F47CD1F63B42885A15 /* Pods-caiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caiTests.debug.xcconfig"; path = "Target Support Files/Pods-caiTests/Pods-caiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7CFC2DC8CBC53D0B07E5153E /* Pods_cai_caiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cai_caiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E98278E8B48BB240720CAA9 /* Pods-cai.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai.release.xcconfig"; path = "Target Support Files/Pods-cai/Pods-cai.release.xcconfig"; sourceTree = "<group>"; };
+		92965764DEDA803CA0055C73 /* Pods-caiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-caiTests.release.xcconfig"; path = "Target Support Files/Pods-caiTests/Pods-caiTests.release.xcconfig"; sourceTree = "<group>"; };
+		BFB8B1F51563D0F77FE09F89 /* Pods-cai-caiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai-caiUITests.debug.xcconfig"; path = "Target Support Files/Pods-cai-caiUITests/Pods-cai-caiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4A6EAB762B9630A899B24F3 /* Pods-cai-caiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai-caiUITests.release.xcconfig"; path = "Target Support Files/Pods-cai-caiUITests/Pods-cai-caiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D51456228A9DA2DE2BF8129C /* Pods_caiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_caiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB48B9E22BD1030100A03C11 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DB6F68AB2C0B231800DC0387 /* StartWorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWorkoutViewModel.swift; sourceTree = "<group>"; };
+		DB6F68AD2C0B234200DC0387 /* StartWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartWorkoutView.swift; sourceTree = "<group>"; };
+		DB6F68AF2C0B511C00DC0387 /* TemplateWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateWorkoutView.swift; sourceTree = "<group>"; };
+		DB6F68B12C0B51D800DC0387 /* TemplateExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateExerciseView.swift; sourceTree = "<group>"; };
+		DB83B5B62C0DEF9D0064BCEC /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DB83B5B82C0DF7FE0064BCEC /* RegisterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		DB83B5BA2C0DF8360064BCEC /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		DB83B5C12C0E19280064BCEC /* HistoryExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryExerciseView.swift; sourceTree = "<group>"; };
+		DB83B5C32C0E19AF0064BCEC /* ExerciseAboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseAboutView.swift; sourceTree = "<group>"; };
+		DB83B5C52C0E19E70064BCEC /* ExerciseRecordsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseRecordsView.swift; sourceTree = "<group>"; };
+		DB83B5C72C0E1CF40064BCEC /* HistoryExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryExerciseViewModel.swift; sourceTree = "<group>"; };
+		DB83B5C92C0E1E720064BCEC /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		DB83B5CB2C0E1F5B0064BCEC /* Set_E.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Set_E.swift; sourceTree = "<group>"; };
+		DB922BDC2C08B52500DF7699 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DB922BDE2C08B65100DF7699 /* HistoryWorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryWorkoutsView.swift; sourceTree = "<group>"; };
+		DB922BE02C08B66700DF7699 /* ListTemplateExercisesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTemplateExercisesView.swift; sourceTree = "<group>"; };
+		DB922BE62C09D32C00DF7699 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DB922BEA2C09D5C000DF7699 /* TemplateWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateWorkout.swift; sourceTree = "<group>"; };
+		DB922BEC2C09D5D500DF7699 /* TemplateExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateExercise.swift; sourceTree = "<group>"; };
+		DBB33C902C2058540092B302 /* WhileModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhileModels.swift; sourceTree = "<group>"; };
+		DBD250232C120FE0008BBE50 /* WorkoutDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewModel.swift; sourceTree = "<group>"; };
+		DBD250252C1302DE008BBE50 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		DBD250272C1305DD008BBE50 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		DBD250292C1442A1008BBE50 /* WorkoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutDetailView.swift; sourceTree = "<group>"; };
+		DBD2502B2C145FE1008BBE50 /* CreateModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateModels.swift; sourceTree = "<group>"; };
+		DBEBC18F2C1057D400564D1A /* ExerciseSetsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSetsView.swift; sourceTree = "<group>"; };
+		DBEBC1982C10B1D800564D1A /* HistoryWorkoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryWorkoutsViewModel.swift; sourceTree = "<group>"; };
+		DBEBC19A2C10B21500564D1A /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		DBEBC19C2C10B56100564D1A /* HistoryWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryWorkoutView.swift; sourceTree = "<group>"; };
 		DBF8C8F82BC81A49005AE697 /* cai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF8C8FB2BC81A49005AE697 /* caiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caiApp.swift; sourceTree = "<group>"; };
-		DBF8C8FD2BC81A49005AE697 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBF8C8FD2BC81A49005AE697 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		DBF8C8FF2BC81A4A005AE697 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF8C9022BC81A4B005AE697 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBF8C9082BC81A4B005AE697 /* caiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = caiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +130,18 @@
 		DBF8C9122BC81A4B005AE697 /* caiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = caiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF8C9162BC81A4B005AE697 /* caiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caiUITests.swift; sourceTree = "<group>"; };
 		DBF8C9182BC81A4B005AE697 /* caiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = caiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DBF8C9252BC81A9B005AE697 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBF8C9322BC918CE005AE697 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		DBF8C9382BC91950005AE697 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DBF8C9402BC91CF1005AE697 /* ToDoListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItem.swift; sourceTree = "<group>"; };
+		DBF8C9422BC91D00005AE697 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DBF8C9442BC91D50005AE697 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		DBF8C9462BC91D5F005AE697 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
+		DBF8C9482BC91D76005AE697 /* ToDoListViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewViewModel.swift; sourceTree = "<group>"; };
+		DBF8C94C2BC91D94005AE697 /* LoginViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewViewModel.swift; sourceTree = "<group>"; };
+		DBF8C9522BC931E1005AE697 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		DBF8C9552BC95654005AE697 /* TLButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TLButton.swift; sourceTree = "<group>"; };
+		E293F48F78EC45C61B41B3A7 /* Pods-cai.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cai.debug.xcconfig"; path = "Target Support Files/Pods-cai/Pods-cai.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +149,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBF8C9292BC83AF5005AE697 /* FirebaseAuth in Frameworks */,
+				DB83B5C02C0E0C9F0064BCEC /* SlidingTabView in Frameworks */,
+				DBF8C92B2BC83AF5005AE697 /* FirebaseFirestore in Frameworks */,
+				DBF8C92D2BC83AF5005AE697 /* FirebaseFirestoreSwift in Frameworks */,
+				7113281A7269B40D9C27CBB9 /* Pods_cai.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D1D3C3378A796B4456D8EC /* Pods_caiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,12 +169,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A8BA5454E227871D919F55C /* Pods_cai_caiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE45D7ABC93CAF4363B6A60A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E293F48F78EC45C61B41B3A7 /* Pods-cai.debug.xcconfig */,
+				7E98278E8B48BB240720CAA9 /* Pods-cai.release.xcconfig */,
+				BFB8B1F51563D0F77FE09F89 /* Pods-cai-caiUITests.debug.xcconfig */,
+				D4A6EAB762B9630A899B24F3 /* Pods-cai-caiUITests.release.xcconfig */,
+				5E87B2F47CD1F63B42885A15 /* Pods-caiTests.debug.xcconfig */,
+				92965764DEDA803CA0055C73 /* Pods-caiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DB83B5B32C0DEEFA0064BCEC /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DB83B5B62C0DEF9D0064BCEC /* Extensions.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		DBF8C8EF2BC81A49005AE697 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +204,8 @@
 				DBF8C90B2BC81A4B005AE697 /* caiTests */,
 				DBF8C9152BC81A4B005AE697 /* caiUITests */,
 				DBF8C8F92BC81A49005AE697 /* Products */,
+				BE45D7ABC93CAF4363B6A60A /* Pods */,
+				F9EDCC8AAE61334483A5B9FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +222,11 @@
 		DBF8C8FA2BC81A49005AE697 /* cai */ = {
 			isa = PBXGroup;
 			children = (
-				DBF8C8FB2BC81A49005AE697 /* caiApp.swift */,
-				DBF8C8FD2BC81A49005AE697 /* ContentView.swift */,
-				DBF8C8FF2BC81A4A005AE697 /* Assets.xcassets */,
+				DB83B5B32C0DEEFA0064BCEC /* Helpers */,
+				DBF8C9312BC91603005AE697 /* Other */,
+				DBF8C9302BC915EA005AE697 /* Models */,
+				DBF8C92F2BC915C2005AE697 /* ViewModels */,
+				DBF8C92E2BC9154E005AE697 /* Views */,
 				DBF8C9012BC81A4B005AE697 /* Preview Content */,
 			);
 			path = cai;
@@ -127,6 +257,87 @@
 			path = caiUITests;
 			sourceTree = "<group>";
 		};
+		DBF8C92E2BC9154E005AE697 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB83B5C12C0E19280064BCEC /* HistoryExerciseView.swift */,
+				DB83B5B82C0DF7FE0064BCEC /* RegisterView.swift */,
+				DBF8C8FD2BC81A49005AE697 /* MainView.swift */,
+				DBF8C9322BC918CE005AE697 /* ProfileView.swift */,
+				DBF8C9382BC91950005AE697 /* LoginView.swift */,
+				DBF8C9522BC931E1005AE697 /* HeaderView.swift */,
+				DBF8C9552BC95654005AE697 /* TLButton.swift */,
+				DB922BDC2C08B52500DF7699 /* HomeView.swift */,
+				DB922BDE2C08B65100DF7699 /* HistoryWorkoutsView.swift */,
+				DB922BE02C08B66700DF7699 /* ListTemplateExercisesView.swift */,
+				DB6F68AD2C0B234200DC0387 /* StartWorkoutView.swift */,
+				DB6F68AF2C0B511C00DC0387 /* TemplateWorkoutView.swift */,
+				DB6F68B12C0B51D800DC0387 /* TemplateExerciseView.swift */,
+				DB83B5C32C0E19AF0064BCEC /* ExerciseAboutView.swift */,
+				DB83B5C52C0E19E70064BCEC /* ExerciseRecordsView.swift */,
+				DBEBC18F2C1057D400564D1A /* ExerciseSetsView.swift */,
+				DBEBC19C2C10B56100564D1A /* HistoryWorkoutView.swift */,
+				DBD250252C1302DE008BBE50 /* CustomCorner.swift */,
+				DBD250272C1305DD008BBE50 /* BlurView.swift */,
+				DBD250292C1442A1008BBE50 /* WorkoutDetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DBF8C92F2BC915C2005AE697 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DBF8C9442BC91D50005AE697 /* MainViewViewModel.swift */,
+				DBF8C9462BC91D5F005AE697 /* ProfileViewViewModel.swift */,
+				DBF8C9482BC91D76005AE697 /* ToDoListViewViewModel.swift */,
+				DBF8C94C2BC91D94005AE697 /* LoginViewViewModel.swift */,
+				DB922BE62C09D32C00DF7699 /* HomeViewModel.swift */,
+				DB6F68AB2C0B231800DC0387 /* StartWorkoutViewModel.swift */,
+				DB83B5BA2C0DF8360064BCEC /* RegisterViewModel.swift */,
+				DB83B5C72C0E1CF40064BCEC /* HistoryExerciseViewModel.swift */,
+				DBEBC1982C10B1D800564D1A /* HistoryWorkoutsViewModel.swift */,
+				DBD250232C120FE0008BBE50 /* WorkoutDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		DBF8C9302BC915EA005AE697 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBF8C9402BC91CF1005AE697 /* ToDoListItem.swift */,
+				DBF8C9422BC91D00005AE697 /* User.swift */,
+				DB922BEA2C09D5C000DF7699 /* TemplateWorkout.swift */,
+				DB922BEC2C09D5D500DF7699 /* TemplateExercise.swift */,
+				DB83B5C92C0E1E720064BCEC /* Exercise.swift */,
+				DB83B5CB2C0E1F5B0064BCEC /* Set_E.swift */,
+				DBEBC19A2C10B21500564D1A /* Workout.swift */,
+				DBD2502B2C145FE1008BBE50 /* CreateModels.swift */,
+				DBB33C902C2058540092B302 /* WhileModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBF8C9312BC91603005AE697 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				DBF8C8FF2BC81A4A005AE697 /* Assets.xcassets */,
+				DBF8C9252BC81A9B005AE697 /* GoogleService-Info.plist */,
+				DBF8C8FB2BC81A49005AE697 /* caiApp.swift */,
+				DB48B9E22BD1030100A03C11 /* Launch Screen.storyboard */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		F9EDCC8AAE61334483A5B9FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				54FE4C18402B2B6CB9E80487 /* Pods_cai.framework */,
+				7CFC2DC8CBC53D0B07E5153E /* Pods_cai_caiUITests.framework */,
+				D51456228A9DA2DE2BF8129C /* Pods_caiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +345,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBF8C91C2BC81A4B005AE697 /* Build configuration list for PBXNativeTarget "cai" */;
 			buildPhases = (
+				FF6C73F1569625DE0A318C24 /* [CP] Check Pods Manifest.lock */,
 				DBF8C8F42BC81A49005AE697 /* Sources */,
 				DBF8C8F52BC81A49005AE697 /* Frameworks */,
 				DBF8C8F62BC81A49005AE697 /* Resources */,
@@ -143,6 +355,12 @@
 			dependencies = (
 			);
 			name = cai;
+			packageProductDependencies = (
+				DBF8C9282BC83AF5005AE697 /* FirebaseAuth */,
+				DBF8C92A2BC83AF5005AE697 /* FirebaseFirestore */,
+				DBF8C92C2BC83AF5005AE697 /* FirebaseFirestoreSwift */,
+				DB83B5BF2C0E0C9F0064BCEC /* SlidingTabView */,
+			);
 			productName = cai;
 			productReference = DBF8C8F82BC81A49005AE697 /* cai.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +369,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBF8C91F2BC81A4B005AE697 /* Build configuration list for PBXNativeTarget "caiTests" */;
 			buildPhases = (
+				4A9AA0AD700139F09C1B4DE0 /* [CP] Check Pods Manifest.lock */,
 				DBF8C9042BC81A4B005AE697 /* Sources */,
 				DBF8C9052BC81A4B005AE697 /* Frameworks */,
 				DBF8C9062BC81A4B005AE697 /* Resources */,
@@ -169,6 +388,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DBF8C9222BC81A4B005AE697 /* Build configuration list for PBXNativeTarget "caiUITests" */;
 			buildPhases = (
+				242AF8F8DC99852C40A6C944 /* [CP] Check Pods Manifest.lock */,
 				DBF8C90E2BC81A4B005AE697 /* Sources */,
 				DBF8C90F2BC81A4B005AE697 /* Frameworks */,
 				DBF8C9102BC81A4B005AE697 /* Resources */,
@@ -215,6 +435,10 @@
 				Base,
 			);
 			mainGroup = DBF8C8EF2BC81A49005AE697;
+			packageReferences = (
+				DBF8C9272BC83AF5005AE697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DB83B5BE2C0E0C9F0064BCEC /* XCRemoteSwiftPackageReference "SlidingTabView" */,
+			);
 			productRefGroup = DBF8C8F92BC81A49005AE697 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -233,6 +457,8 @@
 			files = (
 				DBF8C9032BC81A4B005AE697 /* Preview Assets.xcassets in Resources */,
 				DBF8C9002BC81A4A005AE697 /* Assets.xcassets in Resources */,
+				DB48B9E32BD1030100A03C11 /* Launch Screen.storyboard in Resources */,
+				DBF8C9262BC81A9B005AE697 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +478,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		242AF8F8DC99852C40A6C944 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cai-caiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A9AA0AD700139F09C1B4DE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-caiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FF6C73F1569625DE0A318C24 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cai-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBF8C8F42BC81A49005AE697 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF8C8FE2BC81A49005AE697 /* ContentView.swift in Sources */,
+				DBF8C9392BC91950005AE697 /* LoginView.swift in Sources */,
+				DBD250262C1302DE008BBE50 /* CustomCorner.swift in Sources */,
+				DB83B5BB2C0DF8360064BCEC /* RegisterViewModel.swift in Sources */,
+				DBF8C9532BC931E1005AE697 /* HeaderView.swift in Sources */,
+				DBEBC1902C1057D400564D1A /* ExerciseSetsView.swift in Sources */,
+				DBD2502C2C145FE1008BBE50 /* CreateModels.swift in Sources */,
+				DB6F68B02C0B511C00DC0387 /* TemplateWorkoutView.swift in Sources */,
+				DBEBC19D2C10B56100564D1A /* HistoryWorkoutView.swift in Sources */,
+				DBD250242C120FE0008BBE50 /* WorkoutDetailViewModel.swift in Sources */,
+				DB83B5C42C0E19AF0064BCEC /* ExerciseAboutView.swift in Sources */,
+				DB83B5CA2C0E1E720064BCEC /* Exercise.swift in Sources */,
+				DBD2502A2C1442A1008BBE50 /* WorkoutDetailView.swift in Sources */,
+				DBD250282C1305DD008BBE50 /* BlurView.swift in Sources */,
+				DB83B5CC2C0E1F5C0064BCEC /* Set_E.swift in Sources */,
+				DB83B5C62C0E19E70064BCEC /* ExerciseRecordsView.swift in Sources */,
+				DB922BE72C09D32C00DF7699 /* HomeViewModel.swift in Sources */,
+				DB83B5C22C0E19280064BCEC /* HistoryExerciseView.swift in Sources */,
+				DB922BDF2C08B65100DF7699 /* HistoryWorkoutsView.swift in Sources */,
+				DBF8C9452BC91D50005AE697 /* MainViewViewModel.swift in Sources */,
+				DB922BEB2C09D5C000DF7699 /* TemplateWorkout.swift in Sources */,
+				DBB33C912C2058540092B302 /* WhileModels.swift in Sources */,
+				DB6F68AE2C0B234200DC0387 /* StartWorkoutView.swift in Sources */,
+				DBF8C8FE2BC81A49005AE697 /* MainView.swift in Sources */,
+				DB6F68AC2C0B231800DC0387 /* StartWorkoutViewModel.swift in Sources */,
+				DB6F68B22C0B51D800DC0387 /* TemplateExerciseView.swift in Sources */,
+				DBF8C9562BC95654005AE697 /* TLButton.swift in Sources */,
+				DBF8C9472BC91D5F005AE697 /* ProfileViewViewModel.swift in Sources */,
+				DBF8C9332BC918CE005AE697 /* ProfileView.swift in Sources */,
+				DBEBC19B2C10B21500564D1A /* Workout.swift in Sources */,
 				DBF8C8FC2BC81A49005AE697 /* caiApp.swift in Sources */,
+				DBF8C9492BC91D76005AE697 /* ToDoListViewViewModel.swift in Sources */,
+				DBF8C94D2BC91D94005AE697 /* LoginViewViewModel.swift in Sources */,
+				DB922BDD2C08B52600DF7699 /* HomeView.swift in Sources */,
+				DB922BED2C09D5D500DF7699 /* TemplateExercise.swift in Sources */,
+				DBEBC1992C10B1D800564D1A /* HistoryWorkoutsViewModel.swift in Sources */,
+				DB922BE12C08B66700DF7699 /* ListTemplateExercisesView.swift in Sources */,
+				DBF8C9432BC91D00005AE697 /* User.swift in Sources */,
+				DB83B5B92C0DF7FE0064BCEC /* RegisterView.swift in Sources */,
+				DBF8C9412BC91CF1005AE697 /* ToDoListItem.swift in Sources */,
+				DB83B5C82C0E1CF40064BCEC /* HistoryExerciseViewModel.swift in Sources */,
+				DB83B5B72C0DEF9D0064BCEC /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,24 +750,29 @@
 		};
 		DBF8C91D2BC81A4B005AE697 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E293F48F78EC45C61B41B3A7 /* Pods-cai.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"cai/Preview Content\"";
+				DEVELOPMENT_TEAM = 6S95697SKA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CAI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LIBTOOLFLAGS = "\"-XCExpApple true\" \"-XCBuildForPre true\" \"-WLinkingC true\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.callipateraai.cai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -444,24 +783,29 @@
 		};
 		DBF8C91E2BC81A4B005AE697 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E98278E8B48BB240720CAA9 /* Pods-cai.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"cai/Preview Content\"";
+				DEVELOPMENT_TEAM = 6S95697SKA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = CAI;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LIBTOOLFLAGS = "\"-XCExpApple true\" \"-XCBuildForPre true\" \"-WLinkingC true\"";
 				PRODUCT_BUNDLE_IDENTIFIER = com.callipateraai.cai;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -472,6 +816,7 @@
 		};
 		DBF8C9202BC81A4B005AE697 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E87B2F47CD1F63B42885A15 /* Pods-caiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +836,7 @@
 		};
 		DBF8C9212BC81A4B005AE697 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92965764DEDA803CA0055C73 /* Pods-caiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,8 +856,9 @@
 		};
 		DBF8C9232BC81A4B005AE697 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB8B1F51563D0F77FE09F89 /* Pods-cai-caiUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -527,8 +874,9 @@
 		};
 		DBF8C9242BC81A4B005AE697 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A6EAB762B9630A899B24F3 /* Pods-cai-caiUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -582,6 +930,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB83B5BE2C0E0C9F0064BCEC /* XCRemoteSwiftPackageReference "SlidingTabView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuynhNguyen/SlidingTabView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+		DBF8C9272BC83AF5005AE697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.24.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB83B5BF2C0E0C9F0064BCEC /* SlidingTabView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB83B5BE2C0E0C9F0064BCEC /* XCRemoteSwiftPackageReference "SlidingTabView" */;
+			productName = SlidingTabView;
+		};
+		DBF8C9282BC83AF5005AE697 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBF8C9272BC83AF5005AE697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		DBF8C92A2BC83AF5005AE697 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBF8C9272BC83AF5005AE697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DBF8C92C2BC83AF5005AE697 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DBF8C9272BC83AF5005AE697 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DBF8C8F02BC81A49005AE697 /* Project object */;
 }
