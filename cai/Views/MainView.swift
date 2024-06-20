@@ -11,6 +11,7 @@ import SwiftUI
 struct MainView: View {
     @StateObject var viewModel = LoginViewViewModel()
     @State private var showWorkoutDetail = false
+    @State private var showWorkoutName: String = ""
     
     
     // Gestures Properties
@@ -39,7 +40,7 @@ struct MainView: View {
                                 .tabItem {
                                     Label("History", systemImage: "clock.fill")
                                 }
-                            StartWorkoutView(showWorkoutDetail: $showWorkoutDetail)
+                            StartWorkoutView(showWorkoutDetail: $showWorkoutDetail, showWorkoutName: $showWorkoutName)
                                 .tabItem{
                                     Label("Start Workout", systemImage: "plus")
                                 }
@@ -80,28 +81,13 @@ struct MainView: View {
                             
                             return AnyView(
                                 ZStack {
-                
-                    /*WorkoutDetailView()
-                                     .clipShape(CustomCorner(corners:[.topLeft, .topRight], radius: 30))*/
-                                    
-                                    /*BlurView(style: .light) // systemThinMaterialLight
-                                    .clipShape(CustomCorner(corners:[.topLeft, .topRight], radius:30))*/
-                                    WorkoutDetailView()
-                                        .clipShape(CustomCorner(corners:[.topLeft, .topRight], radius:30))
-                                        .frame(maxHeight: .infinity, alignment: .top)
-                                    /*VStack {
-                                        Capsule()
-                                            .fill(Color.black)
-                                            .frame(width: 60, height: 4)
-                                            .padding(.top)
-                                        // Name of the workout that the person is doing
-                                        Text("Legs")
-                                            .opacity(opacity)
-                                        
-                                        // insert the View for WorkoutDetailView
-                                        ContentView()
+                                    VStack{                                        WorkoutDetailView(showWorkoutDetail: $showWorkoutDetail, showWorkoutName: $showWorkoutName)
+                                            .clipShape(CustomCorner(corners:[.topLeft, .topRight], radius:30))
+                                            .frame(maxHeight: .infinity, alignment: .top)
+                                            //.padding(.top, 50)
                                     }
-                                    .frame(maxHeight: .infinity, alignment: .top)*/
+                                    //.padding(.top, 30)
+                                    
                                 }
                                     .offset(y: 0) //: (height - 100) this offset is to change the intial height of the view
                                     .offset(y: offset < 0 ? 0 : offset) // y: -offset > 0 ? -offset <= (height - 100) ? offset : -(height - 100) : 0
@@ -140,7 +126,7 @@ struct MainView: View {
                 LoginView()
                     .environmentObject(viewModel)
             }
-            
+        
         }
         .onAppear {
             // Optionally, you can add some logic to check authentication status
@@ -161,4 +147,6 @@ struct MainView: View {
 #Preview {
     MainView()
 }
+
+
 

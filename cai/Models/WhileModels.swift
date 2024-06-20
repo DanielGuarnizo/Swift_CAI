@@ -15,6 +15,16 @@ struct WhileWorkout: Identifiable {
     let volume: Int
     let records: Int
     let exercises: [WhileExercise]
+    enum CodingKeys: String, CodingKey {
+        case template_workout_id = "template_workout_id"
+        case workout_name = "workout_name"
+        case date = "date"
+        case duration = "duration"
+        case volume = "volume"
+        case records = "records"
+        case exercises = "exercises"
+    }
+    
 }
 
 struct WhileExercise: Identifiable {
@@ -24,6 +34,13 @@ struct WhileExercise: Identifiable {
     let muscle_group: String
     let category: String
     var sets: [WhileSet]
+    enum CodingKeys: String, CodingKey {
+        case template_exercise_id = "template_exercise_id"
+        case exercise_name = "exercise_name"
+        case muscle_group = "muscle_group"
+        case category = "category"
+        case sets = "sets"
+    }
 }
 
 struct WhileSet: Identifiable {
@@ -32,4 +49,11 @@ struct WhileSet: Identifiable {
     var repetitions: Int
     var type_rep: Int
     var isCompleted: Bool
+    var order: Int
+    enum CodingKeys: String, CodingKey {
+        case kg = "kg"
+        case repetitions = "repetitions"
+        case type_rep = "type_rep"
+        case isCompleted = "isCompleted"
+    }
 }

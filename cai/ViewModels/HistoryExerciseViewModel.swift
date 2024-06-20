@@ -80,6 +80,7 @@ class Webservice_HistoryExerciseView {
         task.resume()
     }
 }
+
 class HistoryExerciseViewModel: ObservableObject {
     @Published var errorMessage: String = ""
     @Published var history_exercise: [Exercise] = []

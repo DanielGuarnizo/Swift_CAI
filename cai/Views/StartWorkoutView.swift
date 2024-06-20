@@ -13,12 +13,18 @@ struct StartWorkoutView: View {
     @State var popupWorkout: TemplateWorkout? = nil
     
     @Binding var showWorkoutDetail: Bool
+    @Binding var showWorkoutName: String
     
     var body: some View {
         ZStack {
             GeometryReader { proxy in
                 ScrollView(.vertical) {
                     VStack(spacing: 20) {
+                        // Title over all the present templates
+                        Text("Templates")
+                            .bold()
+                            .font(.title)
+                            .frame(alignment: .center)
                         if let customWorkouts = viewModel.workoutsDictionary["Custom"] {
                             VStack(alignment: .leading) {
                                 Text("Your Workouts")
@@ -31,7 +37,8 @@ struct StartWorkoutView: View {
                                         ForEach(customWorkouts) { workout in
                                             Button(action: {
                                                 popupWorkout = workout
-                                                showPopup.toggle()
+                                                withAnimation{                       showPopup.toggle()
+                                                }
                                             }) {
                                                 TemplateWorkoutView(template_workout: workout)
                                                     .frame(width: 150, height: 150)
@@ -127,6 +134,7 @@ struct StartWorkoutView: View {
                                 let isSaved = saveTemplateWorkout(template_workout)
                                 
                                 if isSaved {
+                                    showWorkoutName = template_workout.workout_name
                                     withAnimation {
                                         showPopup.toggle()
                                     }
@@ -171,9 +179,9 @@ struct StartWorkoutView: View {
 
 struct Preview: View {
     @State private var showWorkoutDetail = true
-
+    @State private var showWorkoutName = "Example Name"
     var body: some View {
-        StartWorkoutView(showWorkoutDetail: $showWorkoutDetail)
+        StartWorkoutView(showWorkoutDetail: $showWorkoutDetail, showWorkoutName: $showWorkoutName)
     }
 }
 
