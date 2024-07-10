@@ -6,8 +6,7 @@
 //
 
 import SwiftUI
-import FirebaseAuth
-import FirebaseFirestore
+
 
 struct ProfileView: View {
     @EnvironmentObject var viewModel: LoginViewViewModel

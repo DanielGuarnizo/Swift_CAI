@@ -8,7 +8,7 @@
 import SwiftUI
 import SlidingTabView
 
-struct TemplateExerciseView: View {
+struct DetailTemplateExerciseView: View {
     let template_exercise: TemplateExercise
     @State private var tabIndex = 0
     
@@ -41,7 +41,7 @@ struct TemplateExerciseView: View {
 
 
 #Preview {
-    TemplateExerciseView(template_exercise: TemplateExercise(
+    DetailTemplateExerciseView(template_exercise: TemplateExercise(
         template_exercise_id: 7,
         template_workout_id: 1,
         order: 1,

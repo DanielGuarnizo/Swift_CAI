@@ -106,7 +106,7 @@ struct StartWorkoutView: View {
                             List {
                                 ForEach(template_workout.template_exercises) { template_exercise in
                                     NavigationLink(template_exercise.name_exercise) {
-                                        TemplateExerciseView(template_exercise: template_exercise)
+                                        DetailTemplateExerciseView(template_exercise: template_exercise)
                                     }
                                 }
                             }
