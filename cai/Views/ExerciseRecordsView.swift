@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ExerciseRecordsView: View {
-    let exercise: TemplateExercise
+    let template_exercise_id: Int
     var body: some View {
         Text("Tiny muscles")
     }

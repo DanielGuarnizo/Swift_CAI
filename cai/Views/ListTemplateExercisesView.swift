@@ -18,6 +18,17 @@ struct ListTemplateExercisesView: View {
     @State private var newExerciseMuscleGroup: String?
     @State private var newExerciseCategory: String?
     @StateObject var viewModel: AddExerciseViewModel = AddExerciseViewModel()
+    
+    // Popup TemplateExerciseRow
+    @State var showPopupDetailTemplateExercise: Bool = false
+    @State var template_exercise = TemplateExercise(
+        template_exercise_id: 7,
+        template_workout_id: 1,
+        order: 1,
+        name_exercise: "Push Up",
+        muscle_group: "Chest",
+        category: "Strength"
+    )
 
     var filteredExercises: [TemplateExercise] {
         viewModel.exercises.filter { exercise in
@@ -71,7 +82,15 @@ struct ListTemplateExercisesView: View {
                 }
 
                 List(filteredExercises) { exercise in
-                    TemplateExerciseRow(exercise: exercise)
+                    Button(action:{
+                        template_exercise = exercise
+                        withAnimation{
+                            showPopupDetailTemplateExercise.toggle()
+                        }
+                    }){
+                        TemplateExerciseRow(exercise: exercise)
+                    }
+                    
                 }
             }
             .onAppear {
@@ -167,6 +186,25 @@ struct ListTemplateExercisesView: View {
                     }
                     .navigationBarHidden(true)
                 }
+            }
+            .popupNavigationView(show: $showPopupDetailTemplateExercise){
+                DetailTemplateExerciseView(template_exercise_id: template_exercise.template_exercise_id)
+                    .navigationTitle(template_exercise.name_exercise)
+                    .navigationBarTitleDisplayMode(.inline)
+                    .toolbar {
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            Button {
+                                
+                            } label: {
+                                Text("Edit")
+                            }
+                        }
+                        ToolbarItem(placement: .navigationBarLeading) {
+                            Button("Close") {
+                                withAnimation { showPopupDetailTemplateExercise.toggle() }
+                            }
+                        }
+                    }
             }
         }
     }

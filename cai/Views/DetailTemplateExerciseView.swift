@@ -9,25 +9,28 @@ import SwiftUI
 import SlidingTabView
 
 struct DetailTemplateExerciseView: View {
-    let template_exercise: TemplateExercise
+    let template_exercise_id: Int
     @State private var tabIndex = 0
     
     var body: some View {
         VStack {
-            SlidingTabView(selection: $tabIndex, tabs: ["History", "About", "Records"], animation: .easeOut)
+            SlidingTabView(selection: $tabIndex, tabs: ["CAI","History", "About", "Records"], animation: .easeOut)
             // activateAccentColor, selectionBarColor
             
             //Spacer()
             
             switch tabIndex{
             case 0:
-                HistoryExerciseView(template_exercise_id: template_exercise.template_exercise_id)
+                ExerciseAnalysis()
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             case 1:
-                ExerciseAboutView(exercise: template_exercise)
+                HistoryExerciseView(template_exercise_id:template_exercise_id)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             case 2:
-                ExerciseRecordsView(exercise: template_exercise)
+                ExerciseAboutView(template_exercise_id:template_exercise_id)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+            case 3:
+                ExerciseRecordsView(template_exercise_id:template_exercise_id)
                     .frame(maxWidth: .infinity, maxHeight: .infinity)
             default:
                 Text("invalid tab index")
@@ -41,12 +44,5 @@ struct DetailTemplateExerciseView: View {
 
 
 #Preview {
-    DetailTemplateExerciseView(template_exercise: TemplateExercise(
-        template_exercise_id: 7,
-        template_workout_id: 1,
-        order: 1,
-        name_exercise: "Push Up",
-        muscle_group: "Chest",
-        category: "Strength"
-    ))
+    DetailTemplateExerciseView(template_exercise_id: 7)
 }

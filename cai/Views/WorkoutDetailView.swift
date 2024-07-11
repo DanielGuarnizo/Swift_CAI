@@ -14,6 +14,18 @@ struct WorkoutDetailView: View {
     @State var showPopupAddExercise: Bool = false
     @State private var selectedExercises: [TemplateExercise] = []
     
+    // popup TemplateExercise
+    // Popup TemplateExerciseRow
+    @State var showPopupDetailTemplateExercise: Bool = false
+    @State var template_exercise = TemplateExercise(
+        template_exercise_id: 7,
+        template_workout_id: 1,
+        order: 1,
+        name_exercise: "Push Up",
+        muscle_group: "Chest",
+        category: "Strength"
+    )
+    
     var body: some View {
         GeometryReader { proxy in
             let height = proxy.frame(in: .global).height
@@ -105,8 +117,12 @@ struct WorkoutDetailView: View {
                             
                             VStack {
                                 ForEach($viewModel.exercises) { $exercise in
-                                    ExerciseView(exercise: $exercise, removeExercise: { removeExercise(exercise)
-                                    })
+                                    ExerciseView(
+                                        exercise: $exercise,
+                                        removeExercise: { removeExercise(exercise)},
+                                        showPopupDetailTemplateExercise: $showPopupDetailTemplateExercise,
+                                        template_exercise: $template_exercise
+                                    )
                                 }
                                 
                                 Spacer()
@@ -176,6 +192,25 @@ struct WorkoutDetailView: View {
                             }
                         }
                 }
+                .popupNavigationView(show: $showPopupDetailTemplateExercise){
+                    DetailTemplateExerciseView(template_exercise_id: template_exercise.template_exercise_id)
+                        .navigationTitle(template_exercise.name_exercise)
+                        .navigationBarTitleDisplayMode(.inline)
+                        .toolbar {
+                            ToolbarItem(placement: .navigationBarTrailing) {
+                                Button {
+                                    
+                                } label: {
+                                    Text("Edit")
+                                }
+                            }
+                            ToolbarItem(placement: .navigationBarLeading) {
+                                Button("Close") {
+                                    withAnimation { showPopupDetailTemplateExercise.toggle() }
+                                }
+                            }
+                        }
+                }
                 
             }
         }
@@ -191,6 +226,10 @@ struct WorkoutDetailView: View {
 struct ExerciseView: View {
     @Binding var exercise: WhileExercise
     var removeExercise: () -> Void
+    
+    // Popup TemplateExerciseRow
+    @Binding var showPopupDetailTemplateExercise: Bool
+    @Binding var template_exercise : TemplateExercise
 
     var body: some View {
         VStack(alignment: .center) {
@@ -216,8 +255,13 @@ struct ExerciseView: View {
                     Image(systemName: "ellipsis")
                 }
             }
-            //.padding(.horizontal,30)
             .frame(width: UIScreen.main.bounds.width - 20)
+            .onTapGesture {
+                withAnimation{
+                    showPopupDetailTemplateExercise.toggle()
+                }
+            }
+            
 
             HStack {
                 Text("Set")
